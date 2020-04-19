@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Background Image Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>TIP CALCULATOR</h3>
+      <div class="card">
+        <div class="feedback"></div>
+        <form>
+          <h3>How Much Was Your Bill ?</h3>
+          <input type="number" id="bill" />
+          <h3>How Many People Sharing The Bill ?</h3>
+          <input type="number" id="users" />
+          <h3>How Was Your Service</h3>
+          <select id="select">
+            <option selected value="0">Choose...</option>
+          </select>
+          <input type="submit" value="CALCULATE" class="calculate" />
+        </form>
+        <div class="loader">
+          <img src="img/1.gif" />
+        </div>
+        <div class="results">
+          <h2><span id="tip"></span></h2>
+          <h2><span id="total"></span></h2>
+          <h2><span id="person"></span></h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
